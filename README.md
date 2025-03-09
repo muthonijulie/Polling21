@@ -2,16 +2,16 @@
    This project is a polling system with real-time updates built using React, Node.js, Express, MongoDB, and Socket.io. It allows users to create polls, vote in real-time, and see results instantly. This README covers the installation process, features, and technical details of both the frontend and backend.
 
 ## Features
- Real-time Updates: The system allows real-time voting updates and poll result changes using Socket.io.
- Polling System: Users can create polls with multiple choice options and vote on them.
- Real-time Vote Tracking: When a user votes, the vote count and results are updated for all connected users in real-time.
- MongoDB Integration: All polls and votes are stored in MongoDB for persistent data.
- User-Friendly Interface: The frontend is built using React for a dynamic, interactive experience.
+- Real-time Updates: The system allows real-time voting updates and poll result changes using Socket.io.
+- Polling System: Users can create polls with multiple choice options and vote on them.
+- Real-time Vote Tracking: When a user votes, the vote count and results are updated for all connected users in real-time.
+- MongoDB Integration: All polls and votes are stored in MongoDB for persistent data.
+- User-Friendly Interface: The frontend is built using React for a dynamic, interactive experience.
 ## Tech Stack
-  Frontend: React, Socket.io-client
-  Backend: Node.js, Express, Socket.io
-  Database: MongoDB
-  Real-time Communication: Socket.io
+- Frontend: React, Socket.io-client
+- Backend: Node.js, Express, Socket.io
+- Database: MongoDB
+- Real-time Communication: Socket.io
 ## Prerequisites
   Ensure you have the following installed:
 
