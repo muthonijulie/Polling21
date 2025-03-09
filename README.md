@@ -1,5 +1,5 @@
-## Polling System with Real-Time Updates
-   This project is a polling system with real-time updates built using React, Node.js, Express, MongoDB, and Socket.io. It allows users to create polls, vote in real-time, and see results instantly. This README covers the installation process, features, and technical details of both the frontend and backend.
+## Polling Application with Real-Time Updates
+This project is a polling system with real-time updates built using React, Node.js, Express, MongoDB, and Socket.io. It allows users to create polls, vote in real-time, and see results instantly. This README covers the installation process, features, and technical details of both the frontend and backend.
 
 ## Features
 - Real-time Updates: The system allows real-time voting updates and poll result changes using Socket.io.
@@ -40,8 +40,8 @@ Example .env:
 
 ```env
 
-MONGO_URI=mongodb://localhost:27017/polling-system
-PORT=5000
+MONGO_URI=mongodb://localhost:27017/polling-app
+PORT=4000
 ```
 Run the backend server.
 ```bash
