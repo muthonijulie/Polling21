@@ -22,54 +22,55 @@
   Follow the steps below to get your polling system up and running locally.
 
 ## Step 1: Clone the Repository
-bash
-Copy
+```bash
 git clone https://github.com/yourusername/polling-system.git
 cd polling-system
+```
 ## Step 2: Install Backend Dependencies
 Navigate to the backend directory.
-bash
-Copy
+```bash
 cd backend
+```
 Install the backend dependencies.
-bash
-Copy
+```bash
 npm install
+```
 Create a .env file in the backend directory to set up environment variables like MongoDB URI.
 Example .env:
 
-env
-Copy
+```env
+
 MONGO_URI=mongodb://localhost:27017/polling-system
 PORT=5000
+```
 Run the backend server.
-bash
-Copy
+```bash
 npm start
+```
 Your backend server should now be running at http://localhost:5000.
 
 ## Step 3: Install Frontend Dependencies
 Navigate to the frontend directory.
-bash
-Copy
+```bash
 cd ../frontend
+```
 Install the frontend dependencies.
-bash
-Copy
+```bash
 npm install
+```
 Start the frontend development server.
-bash
-Copy
+```bash
 npm start
+```
 The React app should now be running at http://localhost:3000.
 
 ## Step 4: Access the Polling System
 Open http://localhost:3000 in your browser to access the polling system.
 
-Backend Details
+## Backend Details
 The backend is built using Node.js and Express and connects to a MongoDB database to store poll data. Socket.io is used for real-time communication, so the backend can push updates to the frontend whenever a vote is cast or a poll is updated.
 
-Key Endpoints
+## Key Endpoints
 POST /api/polls: Create a new poll.
 
 Request body:
@@ -92,34 +93,34 @@ Copy
   "pollId": "poll_id_here",
   "option": "selected_option"
 }
-Real-time Updates with Socket.io
+## Real-time Updates with Socket.io
 The backend uses Socket.io to emit events whenever there is a new vote or poll update:
 
 Event vote_cast: Emitted when a vote is cast to notify clients of the updated vote count.
 Event new_poll: Emitted when a new poll is created.
-MongoDB Schema
+## MongoDB Schema
 The MongoDB schema consists of two main collections:
 
 Polls: Stores information about each poll, including the question, options, and vote count.
 Votes: Stores individual votes with user details (optional).
 Example of Poll schema:
 
-javascript
-Copy
+```javascript
 const pollSchema = new mongoose.Schema({
   question: { type: String, required: true },
   options: [
     { option: String, votes: { type: Number, default: 0 } }
   ]
 });
-Frontend Details
+```
+## Frontend Details
 The frontend is built with React. It communicates with the backend via HTTP requests for creating and retrieving polls and uses Socket.io-client to listen for real-time updates.
 
-Key Components
+## Key Components
 PollList: Displays all available polls and allows users to vote.
 PollDetail: Displays detailed poll information and allows users to vote for specific options.
 SocketHandler: Manages Socket.io connections and listens for real-time updates.
-Real-time Updates with Socket.io
+## Real-time Updates with Socket.io
 The frontend uses Socket.io-client to listen for events from the backend:
 
 vote_cast: Updates the vote count in real-time when a vote is cast.
@@ -127,19 +128,19 @@ new_poll: Displays a new poll in the list when it is created.
 Running the Frontend
 After installation and setup, you can use the following commands to run the frontend app:
 
-bash
-Copy
+```bash
 npm start
+```
 The app will open on http://localhost:3000, where you can view and interact with the polls.
 
-Troubleshooting
+## Troubleshooting
 CORS issues: If you encounter CORS errors, ensure that your backend server is correctly configured to allow requests from the frontend.
 
 Socket.io Connection: Ensure that both the frontend and backend are running and the correct port numbers are configured.
 
-Contributing
+## Contributing
 Feel free to fork this project, open issues, and submit pull requests. Contributions are always welcome!
 
-License
+## License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
