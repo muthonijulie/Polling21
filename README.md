@@ -23,7 +23,7 @@ This project is a polling system with real-time updates built using React, Node.
 
 ## Step 1: Clone the Repository
 ```bash
-git clone https://github.com/yourusername/polling-app.git
+git clone https://github.com/muthonijulie/Polling21.git
 cd polling-system
 ```
 ## Step 2: Install Backend Dependencies
@@ -47,7 +47,7 @@ Run the backend server.
 ```bash
 npm start
 ```
-Your backend server should now be running at http://localhost:5000.
+Your backend server should now be running at http://localhost:4000.
 
 ## Step 3: Install Frontend Dependencies
 Navigate to the frontend directory.
@@ -62,10 +62,10 @@ Start the frontend development server.
 ```bash
 npm start
 ```
-The React app should now be running at http://localhost:3000.
+
 
 ## Step 4: Access the Polling System
-Open http://localhost:3000 in your browser to access the polling system.
+Open http://localhost:5173 in your browser to access the polling system.
 
 ## Backend Details
 The backend is built using Node.js and Express and connects to a MongoDB database to store poll data. Socket.io is used for real-time communication, so the backend can push updates to the frontend whenever a vote is cast or a poll is updated.
@@ -81,8 +81,6 @@ Request body:
 }
 ```
 GET /api/polls: Get all polls.
-
-GET /api/polls/:id: Get details of a single poll by ID.
 
 POST /api/votes: Cast a vote for a poll.
 
@@ -131,7 +129,7 @@ After installation and setup, you can use the following commands to run the fron
 ```bash
 npm start
 ```
-The app will open on http://localhost:3000, where you can view and interact with the polls.
+The app will open on http://localhost:5173, where you can view and interact with the polls.
 
 ## Troubleshooting
 CORS issues: If you encounter CORS errors, ensure that your backend server is correctly configured to allow requests from the frontend.
