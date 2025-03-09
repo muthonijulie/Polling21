@@ -142,5 +142,5 @@ Socket.io Connection: Ensure that both the frontend and backend are running and 
 Feel free to fork this project, open issues, and submit pull requests. Contributions are always welcome!
 
 ## License
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License
 
