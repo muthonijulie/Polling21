@@ -15,15 +15,15 @@ This project is a polling system with real-time updates built using React, Node.
 ## Prerequisites
   Ensure you have the following installed:
 
-  Node.js (with npm)
-  MongoDB (or use MongoDB Atlas for a cloud database)
-  npm (Node package manager)
+- **Node.js** (with npm)
+- **MongoDB** (or use MongoDB Atlas for a cloud database)
+- **npm** (Node package manager)
 ## Installation
   Follow the steps below to get your polling system up and running locally.
 
 ## Step 1: Clone the Repository
 ```bash
-git clone https://github.com/yourusername/polling-system.git
+git clone https://github.com/yourusername/polling-app.git
 cd polling-system
 ```
 ## Step 2: Install Backend Dependencies
@@ -74,12 +74,12 @@ The backend is built using Node.js and Express and connects to a MongoDB databas
 POST /api/polls: Create a new poll.
 
 Request body:
-json
-Copy
+```json
 {
   "question": "Your poll question",
   "options": ["Option 1", "Option 2", "Option 3"]
 }
+```
 GET /api/polls: Get all polls.
 
 GET /api/polls/:id: Get details of a single poll by ID.
@@ -87,12 +87,12 @@ GET /api/polls/:id: Get details of a single poll by ID.
 POST /api/votes: Cast a vote for a poll.
 
 Request body:
-json
-Copy
+```json
 {
   "pollId": "poll_id_here",
   "option": "selected_option"
 }
+```
 ## Real-time Updates with Socket.io
 The backend uses Socket.io to emit events whenever there is a new vote or poll update:
 
