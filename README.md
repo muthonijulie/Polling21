@@ -3,8 +3,6 @@
 ## 🚀 Live Demo
 [![Live Demo](/screenshots/Home.png)](https://real-time-polling-app-xi.vercel.app/)
 
-### 🏠 Home Screenshot  
-![Real-Time Polling App](/screenshots/Home.png)
 
 ---
 
