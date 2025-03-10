@@ -91,9 +91,9 @@ npm install
 
 ### ▶️ Running the Frontend
 ```bash
-npm start
+npm run dev
 ```
-📍 The frontend should now be running at `http://localhost:3000` (or `http://localhost:5173` if using Vite).
+📍 The frontend should now be running at `http://localhost:5174`.
 
 ---
 
@@ -128,7 +128,7 @@ npm start
  │   │   │   ├── 📂 CreatePoll
  │   │   │   ├── 📂 PollList
  │   │   │   └── 📂 PollDetails
- │   │   ├── App.js
+ │   │   ├── App.jsx
  │   │   ├── App.module.css
  │   │   └── index.js
  │   └── package.json
@@ -166,7 +166,6 @@ const pollSchema = new mongoose.Schema({
 The React frontend can be deployed to services like:
 - 🟣 **Vercel**
 - 🔵 **Netlify**
-- 🟠 **AWS Amplify**
 
 ```bash
 cd frontend
